@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style the body for full-page centering */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c3e50; /* Dark background */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Form container styling */
+        form {
+            background-color: #ecf0f1; /* Light form background */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            width: 300px;
+        }
+
+        /* Table for input alignment */
+        table {
+            width: 100%;
+        }
+
+        /* Styling input fields */
+        input[type="text"], 
+        input[type="password"] {
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #bdc3c7; /* Light border */
+            border-radius: 5px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #1abc9c; /* Green button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background-color: #16a085; /* Darker green */
+        }
+
+        /* Align text labels */
+        td {
+            padding: 10px 0;
+            font-size: 1rem;
+            color: #2c3e50;
+        }
+
+        /* Optional: Center align table cells */
+        td:first-child {
+            text-align: right;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/Car-service-System/AdminLogin" method="POST">
+        <table>
+            <tr>
+                <td>Admin Name</td>
+                <td><input type="text" name="adminUsername" required></td>
+            </tr>
+            <tr>
+                <td>Admin Password</td>
+                <td><input type="password" name="adminPassword" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
